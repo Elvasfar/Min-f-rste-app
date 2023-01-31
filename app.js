@@ -4,8 +4,14 @@ console.log("Hello Dat.js");
 console.log("hej");
 console.log("min første app");
 
-function sayHello() {
+function sayhello() {
   document.querySelector("h3").textContent =
-    "Hej " + document.querySelector("input").value;
+    "Mit navn er " + document.querySelector("#name").value;
+
+  document.querySelector("h3").textContent +=
+    " min alder er " + document.querySelector("#age").value;
+
+  document.querySelector("h3").textContent +=
+    " år og jeg bor i " + document.querySelector("#by").value;
 }
-document.querySelector("button").addEventListener("click", sayHello);
+document.querySelector("button").addEventListener("click", sayhello);
